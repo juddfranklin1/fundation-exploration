@@ -1,0 +1,63 @@
+@import 'mixins.less';
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+.padded-cell {
+
+    padding: 10px;
+
+}
+
+body {
+
+    background: #1cc;
+    .padded-cell;
+
+}
+h1 {
+
+    .transition(all .5s cubic-bezier(1.0, 0.7, 1.0, 0.1));
+    .blur(10px);
+    &:hover {
+        .blur(0);
+    }
+}
+
+figure {
+    display: block;
+    float: left;
+    margin: 10px 0;
+    img {
+        display: block;
+    }
+    figcaption {
+        padding: 0 1rem;
+        background: transparent;
+        color: rgba(50,50,50,.5);
+        font-family: cursive;
+        font-size: 2rem;
+        h4 {
+            margin: 0 0;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    min-height: 400px;
+}
+
+img.lazy {
+    opacity: 0;
+    .transition();
+    &.loading {
+        opacity: 0;
+    }
+    &.loaded {
+        opacity: 1;
+    }
+}
