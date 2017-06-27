@@ -10,7 +10,7 @@ I also created some test content and played around with less.
 
 This is an ugly, lumpy old repo, but it's mine, and I like it.
 
-##Why Manatees?
+## Why Manatees?
 
 Manatees are the most under-rated of all sea mammals.
 
